@@ -12,6 +12,7 @@ body {
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-content {
@@ -46,7 +47,15 @@ header a {
 
 input {
     border: 1px solid #cccccc;
+    color: #eeeeee;
     padding: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: #eeeeee98;
+    opacity: 1;
 }
 
 button {
@@ -55,4 +64,5 @@ button {
     padding: 8px;
     background: #888888;
     color: white;
+    border-radius: 10px;
 }
