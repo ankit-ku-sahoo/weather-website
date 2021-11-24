@@ -11,7 +11,8 @@ const forecast = (latitude, longitude, callback) => {
             const data = body.current
             callback(undefined,{
                 temp: data.temp_c,
-                precipitation: data.precip_mm
+                precipitation: data.precip_mm,
+                condition: data.condition.text
             })
         }
     })
