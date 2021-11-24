@@ -3,42 +3,6 @@ const app = express()
 const path = require('path')
 const hbs = require('hbs')
 
-// Lecture 7.2 & 7.3
-
-// app.get('', (req, res) => {
-//     res.send('<h1>Hello express!</h1>')
-// })
-
-// app.get('/help', (req, res) => {
-//     res.send([{
-//         name: 'Andrew'
-//     }, {
-//         name: 'Sarah'
-//     }])
-// })
-
-// app.get('/about', (req, res) => {
-//     res.send('<h1>This is about page!</h1>')
-// })
-
-// app.get('/weather', (req, res) => {
-//     res.send({
-//         forecast: 25,
-//         location: 'Cuttack'
-//     })
-// })
-
-// app.listen(3000, () => {
-//     console.log('Server is up on 3000')
-// })
-
-
-// Lecture 7.4
-
-
-// console.log(__dirname)
-// console.log(path.join(__dirname, '../public'))
-
 // Define paths for Express Config
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
