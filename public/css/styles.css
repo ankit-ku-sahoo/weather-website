@@ -1,5 +1,5 @@
 body {
-    color: #333333;
+    color: #eeeeee;
     font-family: sans-serif;
     max-width: 650px;
     margin: 0 auto;
@@ -9,6 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main-content {
@@ -16,7 +19,7 @@ body {
 }
 
 footer {
-    color: #888888;
+    color: #eeeeee;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
@@ -32,7 +35,7 @@ h1 {
 }
 
 header a {
-    color: #888888;
+    color: #eeeeee;
     margin-right: 16px;
     text-decoration: none;
 }
