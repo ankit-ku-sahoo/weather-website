@@ -31,20 +31,17 @@ weatherForm.addEventListener('submit', (e) => {
 
                     if(data.forecast.condition.toLowerCase() === 'sunny') {
                         background_body.style.backgroundImage = "url('../img/sun-18.gif')"
-                        background_body.style.transition = "0.5s ease-in"
                     }
                     else if(data.forecast.condition.toLowerCase() === 'mist') {
                         background_body.style.backgroundImage = "url('../img/mist.gif')"
-                        background_body.style.transition = "0.5s ease-in"
                     }
-                    else if(data.forecast.condition.toLowerCase() === 'cloudy' || data.forecast.condition.toLowerCase() === 'partly cloudy' || data.forecast.condition.toLowerCase() === 'overcast') {
-                        background_body.style.backgroundImage = "url('../img/background.jpg')"
-                        background_body.style.transition = "0.5s ease-in"
-                    }
-                    else if(data.forecast.condition.toLowerCase() === 'rainy') {
+                    else if(data.forecast.condition.toLowerCase() === 'rainy' || data.forecast.condition.toLowerCase() === 'drizzle' || data.forecast.condition.toLowerCase() === 'light drizzle') {
                         background_body.style.backgroundImage = "url('../img/rainy.gif')"
-                        background_body.style.transition = "0.5s ease-in"
                     }
+                    else {
+                        background_body.style.backgroundImage = "url('../img/background.jpg')"
+                    }
+                    
                 }
             })
         })

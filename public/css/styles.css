@@ -13,6 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.5s ease-in;
 }
 
 .main-content {
